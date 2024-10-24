@@ -1,73 +1,14 @@
 <template>
   <n-grid :x-gap="12" :y-gap="12" :cols="4" layout-shift-disabled>
     <n-gi :span="1" class="bg-white">
+      <n-h2 class="color-primary text-center">半身bust</n-h2>
       <svg
-        width="300"
-        height="600"
-        viewBox="0 0 1179 3291"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-        <title>a mono/standing</title>
-        <desc>Created with Sketch.</desc>
-        <g id="a-mono/standing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="pose/standing/crossed_arms-1" transform="translate(-121.000000, 634.000000)">
-            <path
-              v-for="child in fullSvgElements.pose?.children"
-              :id="child.id"
-              :key="child.id"
-              :d="child.getAttribute('d') ?? ''"
-              :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
-          </g>
-          <g id="Head" transform="translate(404.000000, 180.000000)">
-            <g id="head/mono/*">
-              <path
-                v-for="child in fullSvgElements.head?.children"
-                :id="child.id"
-                :key="child.id"
-                :d="child.getAttribute('d') ?? ''"
-                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
-            </g>
-            <g id="face/*" transform="translate(159.000000, 186.000000)" fill="#000000">
-              <path
-                v-for="child in fullSvgElements.face?.children"
-                :id="child.id"
-                :key="child.id"
-                :d="child.getAttribute('d') ?? ''"
-                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
-            </g>
-            <g id="facial-hair/*" transform="translate(123.000000, 338.000000)">
-              <path
-                v-for="child in fullSvgElements.facialHair?.children"
-                :id="child.id"
-                :key="child.id"
-                :d="child.getAttribute('d') ?? ''"
-                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
-            </g>
-            <g id="accessories/*" transform="translate(47.000000, 241.000000)">
-              <path
-                v-for="child in fullSvgElements.accessories?.children"
-                :id="child.id"
-                :key="child.id"
-                :d="child.getAttribute('d') ?? ''"
-                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
-            </g>
-          </g>
-        </g>
-      </svg>
-    </n-gi>
-    <n-gi :span="1" class="bg-white">
-      <svg
-        width="300"
-        height="300"
+        width="100%"
+        height="200"
         viewBox="0 0 1136 1533"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-        <title>a mono/bust</title>
-        <desc>Created with Sketch.</desc>
         <g id="a-mono/bust" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="body/mono/*" transform="translate(147.000000, 639.000000)">
             <path
@@ -108,6 +49,114 @@
               :key="child.id"
               :d="child.getAttribute('d') ?? ''"
               :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+          </g>
+        </g>
+      </svg>
+      <n-h2 class="color-primary text-center">坐姿sitting</n-h2>
+      <svg
+        width="165"
+        height="250"
+        viewBox="0 0 1647 2500"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="a-mono/sitting" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="pose/sitting/*" transform="translate(-81.000000, 637.000000)">
+            <path
+              v-for="child in sittingSvgElements.pose?.children"
+              :id="child.id"
+              :key="child.id"
+              :d="child.getAttribute('d') ?? ''"
+              :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+          </g>
+          <g id="Head" transform="translate(345.000000, 180.000000)">
+            <g id="head/mono/*">
+              <path
+                v-for="child in bustSvgElements.head?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+            <g id="face/*" transform="translate(159.000000, 186.000000)" fill="#000000">
+              <path
+                v-for="child in bustSvgElements.face?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.fill ?? (child.id == '🖍-Ink' ? '#000000' : '#FFFFFF')"></path>
+            </g>
+            <g id="facial-hair/*" transform="translate(123.000000, 338.000000)">
+              <path
+                v-for="child in bustSvgElements.facialHair?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+            <g id="accessories/*" transform="translate(47.000000, 241.000000)">
+              <path
+                v-for="child in bustSvgElements.accessories?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </n-gi>
+    <n-gi :span="1" class="bg-white">
+      <n-h2 class="color-primary text-center">站姿standing</n-h2>
+      <svg
+        width="100%"
+        height="600"
+        viewBox="0 0 1179 3291"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="a-mono/standing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="pose/standing/crossed_arms-1" transform="translate(-121.000000, 634.000000)">
+            <path
+              v-for="child in standingSvgElements.pose?.children"
+              :id="child.id"
+              :key="child.id"
+              :d="child.getAttribute('d') ?? ''"
+              :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+          </g>
+          <g id="Head" transform="translate(404.000000, 180.000000)">
+            <g id="head/mono/*">
+              <path
+                v-for="child in standingSvgElements.head?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+            <g id="face/*" transform="translate(159.000000, 186.000000)" fill="#000000">
+              <path
+                v-for="child in standingSvgElements.face?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+            <g id="facial-hair/*" transform="translate(123.000000, 338.000000)">
+              <path
+                v-for="child in standingSvgElements.facialHair?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
+            <g id="accessories/*" transform="translate(47.000000, 241.000000)">
+              <path
+                v-for="child in standingSvgElements.accessories?.children"
+                :id="child.id"
+                :key="child.id"
+                :d="child.getAttribute('d') ?? ''"
+                :fill="child.id == '🖍-Ink' ? '#000000' : '#FFFFFF'"></path>
+            </g>
           </g>
         </g>
       </svg>
@@ -191,8 +240,21 @@
         </n-tab-pane>
         <n-tab-pane name="pose" tab="姿势">
           <NFlex>
+            <n-h3 class="color-primary text-center">站姿</n-h3>
             <img
               v-for="item in poseList"
+              :key="item"
+              class="w-20 h-20 bg-white"
+              :src="
+                appStore.projectSettings.localhost +
+                '/resources/images/open-peeps/Separate Atoms/pose/' +
+                item +
+                '.svg'
+              "
+              @click="loadSvg('pose', item)" />
+            <n-h3 class="color-primary text-center">坐姿</n-h3>
+            <img
+              v-for="item in poseSittingList"
               :key="item"
               class="w-20 h-20 bg-white"
               :src="
@@ -391,17 +453,38 @@ const poseList = ref<Array<string>>([
   '/standing/walking-2',
   '/standing/walking-3'
 ])
+const poseSittingList = ref<Array<string>>([
+  '/sitting/bike',
+  '/sitting/closed_legs-1',
+  '/sitting/closed_legs-2',
+  '/sitting/crossed_legs',
+  '/sitting/hands_back-1',
+  '/sitting/hands_back-2',
+  '/sitting/mid-1',
+  '/sitting/mid-2',
+  '/sitting/one_leg_up-1',
+  '/sitting/one_leg_up-2',
+  '/sitting/wheelchair'
+])
 
-const fullSvgElements = ref<any>({
+const bustSvgElements = ref<any>({
+  body: undefined,
+  head: undefined,
+  face: undefined,
+  facialHair: undefined,
+  accessories: undefined
+})
+const sittingSvgElements = ref<any>({
+  body: undefined,
   pose: undefined,
   head: undefined,
   face: undefined,
   facialHair: undefined,
   accessories: undefined
 })
-
-const bustSvgElements = ref<any>({
+const standingSvgElements = ref<any>({
   body: undefined,
+  pose: undefined,
   head: undefined,
   face: undefined,
   facialHair: undefined,
@@ -416,12 +499,17 @@ async function loadSvg(type, svgFile) {
     const parser = new DOMParser()
     const doc = parser.parseFromString(text, 'image/svg+xml')
     if (type == 'pose') {
-      fullSvgElements.value[type] = doc.querySelector('g') ?? undefined
+      if (svgFile.startsWith('/standing/')) {
+        standingSvgElements.value[type] = doc.querySelector('g') ?? undefined
+      } else {
+        sittingSvgElements.value[type] = doc.querySelector('g') ?? undefined
+      }
     } else if (type == 'body') {
       bustSvgElements.value[type] = doc.querySelector('g') ?? undefined
     } else {
-      fullSvgElements.value[type] = doc.querySelector('g') ?? undefined
       bustSvgElements.value[type] = doc.querySelector('g') ?? undefined
+      standingSvgElements.value[type] = doc.querySelector('g') ?? undefined
+      sittingSvgElements.value[type] = doc.querySelector('g') ?? undefined
     }
   } catch (error) {
     console.error('Error loading or parsing SVG:', error)
