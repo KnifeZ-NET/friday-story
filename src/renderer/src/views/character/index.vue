@@ -54,8 +54,8 @@
       </svg>
       <n-h2 class="color-primary text-center">坐姿sitting</n-h2>
       <svg
-        width="165"
-        height="250"
+        width="100%"
+        height="400"
         viewBox="0 0 1647 2500"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -178,21 +178,6 @@
               @click="loadSvg('head', head)" />
           </NFlex>
         </n-tab-pane>
-        <n-tab-pane name="body" tab="身体">
-          <NFlex>
-            <img
-              v-for="item in bodyList"
-              :key="item"
-              class="w-20 h-20 bg-white"
-              :src="
-                appStore.projectSettings.localhost +
-                '/resources/images/open-peeps/Separate Atoms/body/' +
-                item +
-                '.svg'
-              "
-              @click="loadSvg('body', item)" />
-          </NFlex>
-        </n-tab-pane>
         <n-tab-pane name="face" tab="脸型">
           <NFlex>
             <img
@@ -236,6 +221,21 @@
                 '.svg'
               "
               @click="loadSvg('accessories', item)" />
+          </NFlex>
+        </n-tab-pane>
+        <n-tab-pane name="body" tab="身体">
+          <NFlex>
+            <img
+              v-for="item in bodyList"
+              :key="item"
+              class="w-20 h-20 bg-white"
+              :src="
+                appStore.projectSettings.localhost +
+                '/resources/images/open-peeps/Separate Atoms/body/' +
+                item +
+                '.svg'
+              "
+              @click="loadSvg('body', item)" />
           </NFlex>
         </n-tab-pane>
         <n-tab-pane name="pose" tab="姿势">
@@ -463,7 +463,6 @@ const poseSittingList = ref<Array<string>>([
   '/sitting/mid-1',
   '/sitting/mid-2',
   '/sitting/one_leg_up-1',
-  '/sitting/one_leg_up-2',
   '/sitting/wheelchair'
 ])
 
