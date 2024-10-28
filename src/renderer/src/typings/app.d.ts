@@ -358,7 +358,8 @@ declare namespace App {
             volume: string
             fontFamily: string
             fontFamilyOption: {
-              butter: string
+              circular: string
+              cuSong: string
               harmony: string
             }
           }

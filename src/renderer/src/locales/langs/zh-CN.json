@@ -328,8 +328,6 @@
       "general": {
         "fontFamily": "字体",
         "fontFamilyOption": {
-          "butter": "黄油体",
-          "chillHuoSong": "寒蝉活宋体",
           "circular": "圆体",
           "cuSong": "粗宋",
           "harmony": "鸿蒙体"
@@ -371,7 +369,8 @@
     "setting_about": "关于",
     "setting_system": "通用",
     "setting_theme": "外观",
-    "task": "任务"
+    "task": "任务",
+    "character": "角色设置"
   },
   "system": {
     "title": "Friday Story"

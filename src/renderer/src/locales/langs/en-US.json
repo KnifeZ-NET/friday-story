@@ -328,7 +328,8 @@
       "general": {
         "fontFamily": "typeface",
         "fontFamilyOption": {
-          "butter": "Butter body",
+          "circular": "Round body",
+          "cuSong": "Rough Song",
           "harmony": "Hongmeng Body"
         },
         "lang": "switch language",
@@ -358,6 +359,7 @@
     "achievement": "achievement",
     "archive": "Archive",
     "backpack": "Backpack",
+    "character": "Role setting",
     "demo": "Demo",
     "gallery": "gallery",
     "home": "Home",
