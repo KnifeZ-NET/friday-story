@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'custom_butter';
-  src: url('../../assets/fonts/ZhanKuQingKeHuangYouTi.woff') format('woff');
-}
-
-@font-face {
   font-family: 'HarmonyOS_Sans_SC';
   src: url('../../assets/fonts/HarmonyOS_Sans_SC_Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'cu_song';
-  src: url('../../assets/fonts/粗宋.otf') format('opentype');
+  src: url('../../assets/fonts/粗宋.ttf') format('truetype');
 }
 
-.font-family-butter {
-  font-family: 'custom_butter', sans-serif;
-  letter-spacing: .5em;
+@font-face {
+  font-family: "CircularBody";
+  src: url('../../assets/fonts/CircularBody.woff') format('woff')
+}
+
+.font-family-circular {
+  font-family: 'CircularBody', sans-serif;
 }
 
 .font-family-harmony {

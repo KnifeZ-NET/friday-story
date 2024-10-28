@@ -35,11 +35,11 @@
                 v-model:value="appStore.projectSettings.fontFamily"
                 :options="[
                   {
-                    label: $t('page.setting.general.fontFamilyOption.butter'),
-                    value: 'font-family-butter'
+                    label: $t('page.setting.general.fontFamilyOption.circular'),
+                    value: 'font-family-circular'
                   },
                   {
-                    label: $t('page.setting.general.fontFamilyOption.chillHuoSong'),
+                    label: $t('page.setting.general.fontFamilyOption.cuSong'),
                     value: 'font-family-cu-song'
                   },
                   {

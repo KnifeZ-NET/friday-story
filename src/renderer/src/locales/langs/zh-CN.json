@@ -330,6 +330,8 @@
         "fontFamilyOption": {
           "butter": "黄油体",
           "chillHuoSong": "寒蝉活宋体",
+          "circular": "圆体",
+          "cuSong": "粗宋",
           "harmony": "鸿蒙体"
         },
         "lang": "切换语言",
